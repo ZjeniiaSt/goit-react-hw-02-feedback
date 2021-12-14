@@ -5,7 +5,6 @@ class Statistics extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
-    1: 0,
   };
 
   render() {
