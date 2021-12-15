@@ -1,7 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import Section from './components/Section';
-import List from './components/Statistics/StatisticList';
+import Statistics from './components/Statistics';
 import FeedbackOptions from './components/feedbackOptions';
 
 class App extends Component {
@@ -32,10 +32,10 @@ class App extends Component {
           <FeedbackOptions options={this.state} onLeaveFeedback={this.onLeaveFeedback} />
         </Section>
         <Section title="Statistics">
-          <List
-            marks={this.state}
+          <Statistics
+            options={this.state}
             total={this.countTotalFeedback()}
-            positive={this.countPositiveFeedbackPercentage()}
+            positivePercentage={this.countPositiveFeedbackPercentage()}
           />
         </Section>
       </>
