@@ -5,6 +5,7 @@ export const SectionStyle = styled.section`
   border: 2px solid pink;
   border-radius: 20px;
   color: red;
+  text-align: center;
 `;
 
 export const SectionTitle = styled.h2`
