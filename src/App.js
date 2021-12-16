@@ -34,7 +34,7 @@ class App extends Component {
         </Section>
         <Section title="Statistics">
           {this.countTotalFeedback() === 0 ? (
-            <Notification message="No feedback given" />
+            <Notification message="There is no feedback" />
           ) : (
             <Statistics
               options={this.state}

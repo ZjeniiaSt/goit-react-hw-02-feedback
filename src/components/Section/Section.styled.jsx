@@ -2,8 +2,6 @@ import styled from '@emotion/styled';
 
 export const SectionStyle = styled.section`
   padding: 20px;
-  border: 2px solid pink;
-  border-radius: 20px;
   color: red;
   text-align: center;
 `;
