@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
+import { Container, StatisticsList, StatisticsItem } from './Statistics.styled';
 
 function Statistics({ options, total, positivePercentage }) {
   return (
-    <div>
-      <ul>
+    <Container>
+      <StatisticsList>
         {Object.entries(options).map(([key, value]) => (
-          <li key={key}>
+          <StatisticsItem key={key}>
             {key}: {value}
-          </li>
+          </StatisticsItem>
         ))}
-        <li>Total: {total}</li>
-        <li>Positive feedback: {positivePercentage} %</li>
-      </ul>
-    </div>
+        <StatisticsItem>Total: {total}</StatisticsItem>
+        <StatisticsItem>Positive feedback: {positivePercentage} %</StatisticsItem>
+      </StatisticsList>
+    </Container>
   );
 }
 
